@@ -1,0 +1,22 @@
+
+<div class="center-text">
+  <div class="container">
+    <h4> List New Meal</h4>
+
+    <form>
+      <fieldset class="form-group">
+        <input type="text" class="form-control" id="formGroupExampleInput1" placeholder="Meal Image">
+      </fieldset>
+      <fieldset class="form-group">
+        <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Meal Name">
+      </fieldset>
+      <fieldset class="form-group">
+        <input type="text" class="form-control" id="formGroupExampleInput3" placeholder="Description of Meal">
+      </fieldset>
+    </form>
+
+
+    <%= link_to "Create Meal", list_meal_path(@list_meal), :class => "btn btn-warning"%>
+  </div>
+
+</div>

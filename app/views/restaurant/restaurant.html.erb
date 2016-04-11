@@ -1,20 +1,37 @@
-<div class="center-text">
+<div class="container center-text">
   <h1>Restaurant</h1>
 </div>
 
 </br>
 
-<div class="center-text col-md-4 col-md-offset-4">
-  <form>
-    <fieldset class="form-group">
-      <label for="formGroupExampleInput">Example label</label>
-      <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input">
-    </fieldset>
-    <fieldset class="form-group">
-      <label for="formGroupExampleInput2">Another label</label>
-      <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input">
-    </fieldset>
-  </form>
-  <input class="btn btn-primary" type="submit" value="Submit">
-  <button type="button" class="btn btn-success-outline">Sign Up</button>
+<div class="center-text col-lg-12">
+  <div class="container">
+    <!-- <form>
+      <fieldset class="form-group">
+        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Username">
+      </fieldset>
+      <fieldset class="form-group">
+        <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Password">
+      </fieldset>
+    </form>
+    <input class="btn btn-primary" type="submit" value="Submit">
+    <%= link_to "Sign Up", sign_up_path(@sign_up), :class => "btn btn-success"%>
+    -->
+      <hr>
+
+    <div>
+      <%= link_to "List Meal", list_meal_path(@list_meal), :class => "btn btn-warning"%>
+    </div>
+
+      <hr>
+
+    <div>
+      <h3>Current Meals</h3>
+    </div>
+
+      <%= image_tag("meal_list.png") %>
+
+    <hr>
+
+  </div>
 </div>

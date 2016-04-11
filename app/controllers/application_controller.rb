@@ -5,7 +5,10 @@ class ApplicationController < ActionController::Base
 
     def home
     end
-    
+
+    def sign_up
+    end
+
     def customer
     end
 

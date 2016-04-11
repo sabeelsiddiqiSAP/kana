@@ -11,6 +11,12 @@ Rails.application.routes.draw do
   get 'customer' => 'customer#customer', as: :customer
   get 'restaurant' => 'restaurant#restaurant', as: :restaurant
   get 'organization' => 'organization#organization', as: :organization
+  get 'sign_up' => 'sign_up#sign_up', as: :sign_up
+  get 'list_meal' => 'restaurant#list_meal', as: :list_meal
+  get 'meals' => 'customer#meals', as: :meals
+  get 'ingredients' => 'customer#ingredients', as: :ingredients
+
+
 
   # Example of named route that can be invoked with purchase_url(id: product.id)
   #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase
