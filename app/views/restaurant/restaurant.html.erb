@@ -1,37 +1,45 @@
-<div class="container center-text">
-  <h1>Restaurant</h1>
-</div>
+<div class="box">
 
-</br>
-
-<div class="center-text col-lg-12">
-  <div class="container">
-    <!-- <form>
-      <fieldset class="form-group">
-        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Username">
-      </fieldset>
-      <fieldset class="form-group">
-        <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Password">
-      </fieldset>
-    </form>
-    <input class="btn btn-primary" type="submit" value="Submit">
-    <%= link_to "Sign Up", sign_up_path(@sign_up), :class => "btn btn-success"%>
-    -->
-      <hr>
-
-    <div>
-      <%= link_to "List Meal", list_meal_path(@list_meal), :class => "btn btn-warning"%>
-    </div>
-
-      <hr>
-
-    <div>
-      <h3>Current Meals</h3>
-    </div>
-
-      <%= image_tag("meal_list.png") %>
-
-    <hr>
-
+  <div class="center-text">
+    <h1>Restaurant</h1>
   </div>
+
+  </br>
+
+    <div class="center-text">
+
+          <div>
+            <%= link_to 'List New Meal', new_create_meal_path, :class => "btn btn-primary" %>
+          </div>
+
+            <hr>
+
+          <div>
+            <h3>Current Meals</h3>
+          </div>
+
+          <table>
+              <tbody>
+
+                  <% @create_meals.each do |create_meal| %>
+                        <tr>
+                          <div class="col-md-6 col-md-offset-3">
+                          <div class="thumbnail">
+
+                          <%= image_tag create_meal.avatar.url(:thumb) %>
+                          <p><%= create_meal.name %></p>
+                          <p><%= create_meal.description %></p>
+
+                          <%= link_to 'Show', create_meal, :class => "btn btn-primary" %>
+                          <%= link_to 'Edit', edit_create_meal_path(create_meal), :class => "btn btn-success" %>
+                          <%= link_to 'Destroy', create_meal, method: :delete, data: { confirm: 'Are you sure?' },:class => "btn btn-danger" %>
+                        </div>
+                      </tr>
+                  <% end %>
+              </tbody>
+
+          </table>
+
+        </div>
+    </div>
 </div>

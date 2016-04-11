@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+<div class="box">
+  <p>
+    <%= image_tag @create_meal.avatar.url(:medium) %>
+  </p>
+
+  <p>
+    <strong>Name:</strong>
+    <%= @create_meal.name %>
+  </p>
+
+  <p>
+    <strong>Description:</strong>
+    <%= @create_meal.description %>
+  </p>
+
+
+  <%= link_to 'Edit', edit_create_meal_path(@create_meal) %> |
+  <%= link_to 'Back', create_meals_path %>
+</div>
