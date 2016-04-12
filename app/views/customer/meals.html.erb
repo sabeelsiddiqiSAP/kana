@@ -1,11 +1,26 @@
-
-<div class="center-text col-lg-12">
   <div class="box">
-      <div style="padding: 50px">
         <h3>Available Meals</h3>
-          <hr>
-        <%= image_tag("meal_map.png", :height => "110%") %>
-          <div style="padding-top: 15px"><%= link_to "Back", customer_path(@customer), :class => "btn btn-success"%></div>
-      </div>
-  </div>
-</div>
+   </div>
+
+        <div>
+
+          <table>
+              <tbody>
+                  <% @create_meals.each do |create_meal| %>
+                        <tr>
+                          <div class="col-md-4 col-md-offset-4 center-text">
+	                          <div class="thumbnail">
+		                          <%= image_tag create_meal.avatar.url(:thumb) %>
+		                          <h3><%= create_meal.name %></h3>
+		                          <p><%= create_meal.description %></p>
+
+		                          <%= link_to 'Purchase', create_meal, :class => "btn btn-primary" %>
+	                          </div>
+	                      </div>
+                      </tr>
+                  <% end %>
+              </tbody>
+          </table>	 
+
+        </div>
+

@@ -24,11 +24,4 @@ ActiveRecord::Schema.define(version: 20160411055734) do
     t.datetime "avatar_updated_at"
   end
 
-  create_table "meals", force: :cascade do |t|
-    t.text     "name"
-    t.text     "description"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
-  end
-
 end
