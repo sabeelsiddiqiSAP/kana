@@ -4,6 +4,7 @@ class CustomerController < ApplicationController
   end
 
   def ingredients
+    @ingredients = Ingredient.all
   end
 
 end

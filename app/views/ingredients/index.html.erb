@@ -1,0 +1,35 @@
+  <p id="notice"><%= notice %></p>
+
+
+
+<div class="box">
+      <h3>Available Ingredient Packages</h3>
+</div>
+
+   <div>
+       <div class="col-lg-4">
+         <table>
+           <tbody>
+               <% @ingredients.each do |ingredient| %>
+                     <tr>
+                       <div class="center-text">
+                         <div class="thumbnail">
+                           <%= image_tag ingredient.avatar.url(:thumb) %>
+                           <h3><%= ingredient.name %></h3>
+                           <p><%= ingredient.description %></p>
+                           <%= link_to "Purchase", thankyou_path(@organization), :class => "btn btn-primary"%>
+                         </div>
+                       </div>
+                     </tr>
+               <% end %>
+           </tbody>
+       </table>
+     </div>
+ </div>
+
+ <div class="col-lg-8">
+   <div class="vertical">
+     <%= image_tag ("map.png")%>
+   </div>
+
+ </div>

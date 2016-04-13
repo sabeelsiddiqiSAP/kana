@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+<div class="box">
+
+  <p>
+    <%= image_tag @ingredient.avatar.url(:medium) %>
+  </p>
+  <p>
+    <strong>Name:</strong>
+    <%= @ingredient.name %>
+  </p>
+
+  <p>
+    <strong>Description:</strong>
+    <%= @ingredient.description %>
+  </p>
+
+  <%= link_to 'Edit', edit_ingredient_path(@ingredient) %> |
+  <%= link_to 'Back', ingredients_path %>
+</div>
