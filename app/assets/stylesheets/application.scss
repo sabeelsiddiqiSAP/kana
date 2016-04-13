@@ -9,11 +9,13 @@
   height: 500px;
 }
 
-@media (min-width: 979px) {
   body {
-  padding-top: 60px;
-  }
-}
+      background-image: image-url('background1.jpeg');
+      background-size: 100%;
+      height: auto;
+      width: auto;
+   }
+
 
 img {
     max-width: 100%;
@@ -23,12 +25,7 @@ img {
 
 
 
- body {
-     background-image: image-url('background1.jpeg');
-     background-size: 100%;
-     height: auto;
-     width: auto;
-  }
+
 
 input[type=file] {
     margin: 0 auto;
