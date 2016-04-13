@@ -4,6 +4,8 @@ Rails.application.routes.draw do
 
 
   root 'home#index'
+  get  'customer_case' => 'home#customer_case', as: :customer_case
+  get  'retailer_case' => 'home#retailer_case', as: :retailer_case
 
   get 'customer' => 'customer#customer', as: :customer
   get 'meals' => 'customer#meals', as: :meals

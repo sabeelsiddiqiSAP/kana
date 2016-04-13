@@ -1,23 +1,30 @@
 <div class="box" style="text-align:center">
     <div style="padding-top: 75px"><%= image_tag ("mainlogo.png"), :height => "80%"%></div>
     <h1 style="padding-top: 100px">Welcome to Kana</h1>
-    <p>Cheeseburger pecorino stinking bishop.
-      Everyone loves fondue fromage frais cheesecake say
-      cheese taleggio fondue cheese and biscuits. St. agur
-      blue cheese babybel when the cheese comes out everybody's
-      happy halloumi cheese on toast manchego cut the cheese cheese
-      strings. Fromage queso swiss jarlsberg stinking bishop red leicester
-      when the cheese comes out everybody's happy the big cheese. Ricotta
-      cauliflower cheese danish fontina.</p>
+  <hr>
 
-      <p>Danish fontina bavarian bergkase everyone loves. Macaroni cheese
-        babybel fromage frais cream cheese everyone loves stilton dolcelatte
-        cut the cheese. Cheese slices caerphilly blue castello goat cheese and
-        wine feta queso chalk and cheese. Stilton.</p>
+  <div>
+      <h2>About</h2>
 
-      <p>Cut the cheese cheeseburger pepper jack. Cheese on toast boursin croque
-        monsieur smelly cheese cheese and wine emmental cheese strings say cheese.
-        Swiss st. agur blue cheese taleggio fromage frais boursin goat port-salut cheese
-        on toast. Hard cheese cheesy feet fromage frais lancashire blue castello pepper
-        jack fondue cheese strings. Emmental the big cheese bavarian bergkase.</p>
+      <p>Kana is a revolutionary platform for businesses such as
+        Restaurants and Grocery Stores to sell discounted food to customers that would normally get thrown away.
+
+        Every year 1.3 Billion Tons of food gets thrown away globally.
+        This food loss is highly due to prepared foods not getting sold in market, whether it be pricing or availability.
+
+        Not only could this food be sold to consumers at a discounted price,
+        but it could also be donated to charity organizations local to the respecitve businesses</p>
+
+        <p>Kana hopes to combat the issue of food loss by allowing consumers to purchase discounted foods,
+        if these foods are not sold, then they are donated to local charity organzations</p>
+   </div>
+
+   <hr>
+
+   <div>
+     <h2>Business Case</h2>
+        <p>Please click the buttons below to view the use case for customers and retailers</p>
+        <%= link_to "Customer Case", customer_case_path, :class => "btn btn-primary" %>
+        <%= link_to "Retailer Case", retailer_case_path, :class => "btn btn-success" %>
+    </div>
 </div>
